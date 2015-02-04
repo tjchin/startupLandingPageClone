@@ -1,3 +1,11 @@
+/* Paul Irish Box-sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,17 +37,10 @@ body {
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+/* End of reset */
+/* Start of custom styles */
+.content {
+	padding: 0 15px;
 }
 /* Navigation section */
 .top-navigation {
@@ -50,7 +51,28 @@ table {
 	height: 70px;
 	margin: 0 auto;
 }
-.logo {
-	margin-left: 14px;
+.top-navigation .logo {
 	height: 70px;
+}
+.top-navigation .links {
+	float: right;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #838994;
+	margin-top: 25px;
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
+}
+.top-navigation .links li {
+	display: inline-block;
+	margin-left: 25px;
+}
+.top-navigation .links .active {
+	color: #4c5058;
+	font-weight: 500;
+}
+.top-navigation .links li:hover {
+	cursor: pointer;
+	color: #333333;
+	transition: color ease-out 2s;
 }
