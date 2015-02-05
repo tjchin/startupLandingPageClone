@@ -51,6 +51,7 @@ body {
 	background-color: #fff; 
 	width: 100%;
 	position: fixed;
+	z-index: 9999;
 }
 .top-navigation > .content {
 	height: 4.5rem;
@@ -127,4 +128,34 @@ button:hover {
 	background-color: #d9400e;
 	border-color: #cf3d0e;
 	cursor: pointer;
+}
+/* section */
+.cases {
+	background-color: #fff;
+	overflow: hidden;
+	padding-bottom: 5rem;
+}
+.cases .content {
+	margin-top: 7rem;
+	padding: none;
+	color: #1d1e21;
+	text-align: center;
+}
+.cases h2 {
+	font-size: 3rem;
+	margin: 2rem 0px 2rem;
+	font-weight: 300;
+}
+.cases .devices > li {
+	float: left;
+	width: 33.3333333%;
+}
+.cases .devices h3 {
+	font-weight: 400;
+	font-size: 1.5rem;
+	margin: 2.5rem 0px 2rem;
+}
+
+ul.white-space-fix li {
+	margin-right: -4px;
 }
